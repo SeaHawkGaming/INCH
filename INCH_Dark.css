@@ -1,0 +1,639 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Own CSS starts here */
+
+body {
+    background-color: #252525;
+    font-family: 'B612', sans-serif; 
+}
+.flex_container {
+    display: flex;
+    flex-direction: row;
+}
+.irl_part {
+    display: flex;
+    flex-direction: column;
+}
+.lateral_arrangement {
+    display: flex;
+    flex-direction: row;
+}
+.airport_display {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: #363C49;
+    width: 1220px;
+}
+.major_button_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    padding: 1px;
+}
+.major_button {
+    background: #B2C3F1;
+    color: #546080;
+    font-weight: 700;
+    font-size: 20px;
+    width: 61px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.major_button_active {
+    background: #363C49;
+    color: #dee5f3;
+    font-weight: 700;
+    font-size: 20px;
+    width: 61px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.major_button_unavail {
+    background: #546080;
+    color: #B2C3F1;
+    font-weight: 700;
+    font-size: 20px;
+    width: 61px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+    margin: 2px;
+}
+.info_strip {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-top: 11px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.clock {
+    color: #b7b7b7;
+    font-family: 'B612 Mono', monospace;
+    font-size: 36px;
+    color: #B2C3F1;
+    text-align: left;
+    font-weight: 700;
+    float: left;
+}
+.atis_boxes {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    height: 110px;
+}
+.on_air_indicator {
+    position: absolute;
+    text-align: right;
+    right: 6px;
+    top: 6px;
+    color: inherit;
+    font-size: 16px;
+    font-weight: normal;
+}
+.atis_runtime {
+    position: absolute;
+    text-align: right;
+    right: 6px;
+    top: 22px;
+    color: inherit;
+    font-size: 20px;
+    font-family: 'B612 Mono', monospace;
+    font-weight: bold;
+}
+.dep_atis {
+    position: relative;
+    color: #dee5f3;
+    width: 229px;
+    height: 110px;
+    padding: 6px;
+    background-color: #333023;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0px;
+}
+.arr_atis {
+    color: #B2C3F1;
+    position: relative;
+    width: 229px;
+    height: 100%;
+    padding: 6px;
+    background-color: #546080;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    font-size: 24px;
+    font-weight: 700;
+}
+.decoded_info_arr {
+    width: 436px;
+    height: 386px;
+    background-color: #546080;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    padding: 5px;
+}
+.decoded_info_arr table {
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.decoded_info_arr tr {
+    padding-bottom: 2px;
+}
+.decoded_info_arr th:nth-child(even) {
+    color: #B2C3F1;
+    text-align: left;
+    padding-left: 11px;
+    padding-bottom: inherit;
+}
+.decoded_info_arr th:nth-child(odd) {
+    color: #8182a0;
+    text-align: right;
+    padding-left: 27px;
+    padding-bottom: inherit;
+}
+.decoded_info_dep {
+    width: 436px;
+    height: 386px;
+    background-color: #333023;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    padding: 5px;
+}
+.decoded_info_dep table {
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.decoded_info_dep tr {
+    padding-bottom: 2px;
+}
+.decoded_info_dep th:nth-child(even) {
+    color: #dee5f3;
+    text-align: left;
+    padding-left: 11px;
+    padding-bottom: inherit;
+}
+.decoded_info_dep th:nth-child(odd) {
+    color: #818EB1;
+    text-align: right;
+    padding-left: 27px;
+    padding-bottom: inherit;
+}
+.TRL_QNH {
+    width: 436px;
+    height: 54px;
+    background-color: #293143;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    padding: 5px;
+}
+.TRL_QNH table {
+    width: 80%;
+    height: 55px;
+    padding-top: 10px;
+}
+.TRL_QNH th:nth-child(odd) {
+    font-size: 20px;
+    color: #B2C3F1;
+    text-align: right;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+.TRL_QNH th:nth-child(even) {
+    font-family: 'B612 Mono', monospace;
+    font-weight: 700;
+    font-size: 42px;
+    color: #EFE26A;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+.Remote_Wind {
+    width: 436px;
+    height: 54px;
+    background-color: #293143;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    padding: 5px;
+}
+.Remote_Wind table {
+    width: 100%;
+    height: 55px;
+    color: #B2C3F1;
+    padding-top: 5px;
+}
+.Remote_Wind th {
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}
+.Remote_Wind td {
+    text-align: center;
+    vertical-align: middle;
+}
+.Day_Night {
+    width: 436px;
+    height: 34px;
+    background-image: url("Starry_Night.png");
+    background-size: cover;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #726F67;
+    padding: 5px;
+}
+.Day_Night table {
+    width: 90%;
+    height: 35px;
+    color: #B2C3F1;
+    padding-top: 5px;
+}
+.Day_Night th {
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+}
+.Day_Night td {
+    text-align: center;
+    vertical-align: middle;
+}
+.graphical_representation {
+    font-family: 'B612 Mono', monospace;
+    font-size: 39px;
+    color: #B2C3F1;
+    position: relative;
+    text-align: center;
+    padding-left: 28px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 700px;
+}
+.arrow_runway_layout {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    width: 641px;
+    visibility: hidden;
+}
+.Wind_Rwy14 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 140px;
+    left: 62px;
+}
+.Wind_Rwy10 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 665px;
+    left: 82px;
+}
+.Wind_Rwy32 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 424px;
+    left: 294px;
+}
+.Wind_Arrow_Rwy14 {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 38px;
+    left: 138px;
+}
+.Wind_Arrow_Rwy10 {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 560px;
+    left: 164px;
+}
+.Wind_Arrow_Rwy32 {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 317px;
+    left: 374px;
+}
+.right_side_menu {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    padding-left: 2px;
+}
+.right_side_controls {
+    display: flex;
+    flex-direction: row;
+    background-color: #414869;
+    padding: 8px;
+}
+.speaker_icon {
+    height: 23px;
+}
+.clock_icon {
+    height: 21px;
+    padding-top: 1px;
+    padding-left: 9px;
+}
+.status_indicator {
+    height: 21px;
+    padding-top: 1px;
+    padding-left: 38px;
+}
+.own_frequency {
+    /* font-family: 'B612 Mono', monospace; */
+    font-size: 15;
+    color: #524D37;
+    background-color: #E9E24A;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2px
+}
+.bottom_info_bar{
+    display: flex;
+    flex-direction: row;
+}
+.status_box_inactive {
+    display: flex;
+    background-color: #495B84;
+    border-style: solid;
+    border-color: #5F719A;
+    border-radius: 2px;
+    border-width: 1px;
+    color: #5F719A;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+.status_box_active {
+    display: flex;
+    background-color: #2C66E0;
+    border-style: solid;
+    border-color: #678CF5;
+    border-radius: 2px;
+    border-width: 1px;
+    color: #D1DDFF;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+.para_jumper_status {
+    width: 240px;
+    height: 310px;
+    background-color: #394469;
+    margin-left: 4px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.para_jumper_table table {
+    border-radius: 2px;
+    border-width: 1px;
+    color: #5F719A;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+}
+.para_jumper_table tr {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+}
+.para_jumper_table td:nth-child(1) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    width: 140px;
+}
+.para_jumper_table td:nth-child(2) {
+    border-width: 1px;
+    border-left-style: solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+}
+.glider_sector_status {
+    width: 357px;
+    height: 310px;
+    background-color: #394469;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 45px;
+    padding-left: 5px;
+}
+.glider_sector_table table {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    margin-right: 45px;
+}
+.glider_sector_table td:first-child {
+    padding-left: 9px;
+    width: 171px;
+    border-left-style: hidden;
+}
+.glider_sector_table td:nth-child(2) {
+    border-left-style: solid;
+    width: 77px;
+}
+.glider_sector_table td {
+    border-width: 1px;
+    border-left-style: solid;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    width: 77px;
+}
+.airspace_status {
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    height: 310px;
+    background-color: #394469;
+    margin-left: 4px;
+    padding-top: 5px;
+}
+.mil_airspace_status {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.mil_addc {
+    width: 50%;
+}
+.dub_emm {
+    width: 50%;
+}
+.mil_airspace_table td {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 5px;
+    width: 95px;
+}
+.civ_airspace_status {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.civ_airspace_table td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    margin-right: 5px;
+    border-left-style: solid;
+    border-width: 1px;
+}
+.civ_airspace_table td:first-child {
+    width: 142px;
+    border-left-style: hidden;
+}
+.crosscoupling_status {
+    display: flex;
+    flex-direction: column;
+    width: 114px;
+    height: 121px;
+    background-color: #394469;
+    margin-left: 4px;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.crosscoupling_table td {
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+}
+.meteo_status {
+    display: flex;
+    flex-direction: column;
+    width: 293px;
+    height: 152px;
+    background-color: #394469;
+    margin-left: 4px;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.meteo_table_left td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    margin-right: 5px;
+    width: 90px;
+    text-align: center;
+    
+}
+.meteo_table_right td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 4px;
+    margin-right: 5px;
+    width: 150px;
+    text-align: center;
+}
+.meteo_left {
+    width: 40%;
+}
+.meteo_right {
+    width: 60%;
+}
+.runway_status {
+    display: flex;
+    flex-direction: row;
+    width: 423px;
+    height: 149px;
+    background-color: #394469;
+    margin-left: 4px;
+    margin-top: 4px;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.ils_table td {
+    width: 95px;
+    height: 65px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.runway_config_table td {
+    width: 190px;
+    height: 65px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}

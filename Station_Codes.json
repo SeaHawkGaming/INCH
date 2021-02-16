@@ -1,0 +1,14 @@
+{"Stations": [
+    {"vatsim_callsign":"LSZH_DEL", "unit":"ADC", "identifier":"DEL"},
+    {"vatsim_callsign":"LSZH_S_GND", "unit":"AMS", "identifier":"AS"},
+    {"vatsim_callsign":"LSZH_N_GND", "unit":"AMS", "identifier":"AN"},
+    {"vatsim_callsign":"LSZH_GND", "unit":"GND", "identifier":"GND"},
+    {"vatsim_callsign":"LSZH_TWR", "unit":"ADC", "identifier":"ADC"},
+    {"vatsim_callsign":"LSZH_2_TWR", "unit":"ADC", "identifier":"ADC2"},
+    {"vatsim_callsign":"LSZH_DEP", "unit":"APP", "identifier":"DEP"},
+    {"vatsim_callsign":"LSZH_APP", "unit":"APP", "identifier":"APE"},
+    {"vatsim_callsign":"LSZH_W_APP", "unit":"APP", "identifier":"APW"},
+    {"vatsim_callsign":"LSZH_F_APP", "unit":"APP", "identifier":"FIN"}
+]
+    
+}

@@ -1,0 +1,30 @@
+{"Alphabet":
+ [
+     {"Letter": "A", "NATO": "Alpha", "NATO_Truncated": "lpha"},
+     {"Letter": "B", "NATO": "Bravo", "NATO_Truncated": "ravo"},
+     {"Letter": "C", "NATO": "Charlie", "NATO_Truncated": "harlie"},
+     {"Letter": "D", "NATO": "Delta", "NATO_Truncated": "elta"},
+     {"Letter": "E", "NATO": "Echo", "NATO_Truncated": "cho"},
+     {"Letter": "F", "NATO": "Foxtrott", "NATO_Truncated": "oxtrott"},
+     {"Letter": "G", "NATO": "Golf", "NATO_Truncated": "olf"},
+     {"Letter": "H", "NATO": "Hotel", "NATO_Truncated": "otel"},
+     {"Letter": "I", "NATO": "India", "NATO_Truncated": "ndia"},
+     {"Letter": "J", "NATO": "Juliett", "NATO_Truncated": "uliett"},
+     {"Letter": "K", "NATO": "Kilo", "NATO_Truncated": "ilo"},
+     {"Letter": "L", "NATO": "Lima", "NATO_Truncated": "ima"},
+     {"Letter": "M", "NATO": "Mike", "NATO_Truncated": "ike"},
+     {"Letter": "N", "NATO": "November", "NATO_Truncated": "ovember"},
+     {"Letter": "O", "NATO": "Oscar", "NATO_Truncated": "scar"},
+     {"Letter": "P", "NATO": "Papa", "NATO_Truncated": "apa"},
+     {"Letter": "Q", "NATO": "Quebec", "NATO_Truncated": "uebec"},
+     {"Letter": "R", "NATO": "Romeo", "NATO_Truncated": "omeo"},
+     {"Letter": "S", "NATO": "Sierra", "NATO_Truncated": "ierra"},
+     {"Letter": "T", "NATO": "Tango", "NATO_Truncated": "ango"},
+     {"Letter": "U", "NATO": "Uniform", "NATO_Truncated": "niform"},
+     {"Letter": "V", "NATO": "Victor", "NATO_Truncated": "ictor"},
+     {"Letter": "W", "NATO": "Whiskey", "NATO_Truncated": "hiskey"},
+     {"Letter": "X", "NATO": "X-Ray", "NATO_Truncated": "-Ray"},
+     {"Letter": "Y", "NATO": "Yankee", "NATO_Truncated": "ankee"},
+     {"Letter": "Z", "NATO": "Zulu", "NATO_Truncated": "ulu"}
+ ]
+}
